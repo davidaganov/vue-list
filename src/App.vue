@@ -6,7 +6,14 @@
     >
       <v-container class="max-width-container">
         <v-row justify="space-between">
-          <v-toolbar-title class="white--text">Vue List</v-toolbar-title>
+          <v-toolbar-title>
+            <router-link
+              to="/"
+              class="white--text"
+            >
+              Vue List
+            </router-link>
+          </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn
             class="white--text"

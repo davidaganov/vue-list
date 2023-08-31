@@ -1,13 +1,11 @@
 <template>
-  <v-container class="max-width-container">
-    <v-select
-      class="select"
-      label="Select category"
-      :items="categories"
-      v-model="selectedCategory"
-      @change="handleCategoryChange(selectedCategory)"
-    />
-  </v-container>
+  <v-select
+    class="select"
+    label="Select category"
+    :items="categories"
+    v-model="selectedCategory"
+    @change="handleCategoryChange(selectedCategory)"
+  />
 </template>
 
 <script>
@@ -34,14 +32,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.select {
-  max-width: 350px;
-  margin-top: 20px;
-  @media (max-width: 1200px) {
-    padding: 0 12px;
-  }
-}
-
 ::v-deep .v-select__selection {
   text-transform: capitalize;
 }
