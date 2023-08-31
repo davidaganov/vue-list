@@ -22,5 +22,9 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url))
     }
-  }
+  },
+  build: {
+    outDir: "dist"
+  },
+  base: "/vue-list/"
 })
