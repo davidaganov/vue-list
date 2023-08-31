@@ -37,6 +37,9 @@ export default {
 .select {
   max-width: 350px;
   margin-top: 20px;
+  @media (max-width: 1200px) {
+    padding: 0 12px;
+  }
 }
 
 ::v-deep .v-select__selection {
